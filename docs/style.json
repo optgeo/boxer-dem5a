@@ -1,0 +1,120 @@
+{
+  "center": [
+    139.74659,
+    35.63518
+  ],
+  "layers": [
+    {
+      "id": "i",
+      "maxzoom": 18,
+      "minzoom": 10,
+      "source": "i",
+      "type": "raster"
+    },
+    {
+      "id": "BldA",
+      "paint": {
+        "fill-extrusion-color": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          "普通建物",
+          [
+            "rgb",
+            200,
+            200,
+            200
+          ],
+          "堅ろう建物",
+          [
+            "rgb",
+            213,
+            199,
+            170
+          ],
+          "普通無壁舎",
+          [
+            "rgb",
+            222,
+            217,
+            240
+          ],
+          "堅ろう無壁舎",
+          [
+            "rgb",
+            238,
+            227,
+            174
+          ],
+          "その他",
+          [
+            "rgb",
+            243,
+            223,
+            208
+          ],
+          [
+            "rgb",
+            222,
+            215,
+            215
+          ]
+        ],
+        "fill-extrusion-height": [
+          "match",
+          [
+            "get",
+            "type"
+          ],
+          [
+            "堅ろう建物",
+            "堅ろう無壁舎"
+          ],
+          20,
+          3.66
+        ],
+        "fill-extrusion-opacity": 0.7
+      },
+      "source": "v",
+      "source-layer": "BldA",
+      "type": "fill-extrusion"
+    }
+  ],
+  "site_root": "http://m343:9966",
+  "sources": {
+    "h": {
+      "maxzoom": 13,
+      "minzoom": 10,
+      "tileSize": 256,
+      "tiles": [
+        "http://m343:9966/zxy/{z}/{x}/{y}.png"
+      ],
+      "type": "raster-dem"
+    },
+    "i": {
+      "maxzoom": 13,
+      "minzoom": 10,
+      "tileSize": 256,
+      "tiles": [
+        "http://m343:9966/zxy/{z}/{x}/{y}.png"
+      ],
+      "type": "raster"
+    },
+    "v": {
+      "attribution": "<a title='測量法に基づく国土地理院長承認(使用)R 2JHs 1065'>R 2JHs 1065</a>",
+      "maxzoom": 16,
+      "tiles": [
+        "https://optgeo.github.io/fgd-tokio/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "terrain": {
+    "exaggeration": 4,
+    "source": "h"
+  },
+  "version": 8,
+  "zoom": 11
+}
