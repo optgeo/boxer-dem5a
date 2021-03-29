@@ -82,14 +82,14 @@
       "type": "fill-extrusion"
     }
   ],
-  "site_root": "http://m343:9966",
+  "site_root": "https://optgeo.github.io/boxer-dem5a",
   "sources": {
     "h": {
       "maxzoom": 13,
       "minzoom": 10,
       "tileSize": 256,
       "tiles": [
-        "http://m343:9966/zxy/{z}/{x}/{y}.png"
+        "https://optgeo.github.io/boxer-dem5a/zxy/{z}/{x}/{y}.png"
       ],
       "type": "raster-dem"
     },
@@ -98,7 +98,7 @@
       "minzoom": 10,
       "tileSize": 256,
       "tiles": [
-        "http://m343:9966/zxy/{z}/{x}/{y}.png"
+        "https://optgeo.github.io/boxer-dem5a/zxy/{z}/{x}/{y}.png"
       ],
       "type": "raster"
     },
