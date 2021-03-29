@@ -112,7 +112,6 @@
     }
   },
   "terrain": {
-    "exaggeration": 4,
     "source": "h"
   },
   "version": 8,
