@@ -94,6 +94,7 @@
       "type": "raster-dem"
     },
     "i": {
+      "attribution": "地理院タイル",
       "maxzoom": 13,
       "minzoom": 10,
       "tileSize": 256,
